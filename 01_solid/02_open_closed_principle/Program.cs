@@ -177,7 +177,6 @@ class App
         // Could be a List to add one by one
         // var specs = new ISpecification<Product>[] { blueSpec, largeSpec };
         // var multiSpec = new MultiSpecification(specs);
-
         var multiSpec = new MultiSpecification(blueSpec, largeSpec);
         Console.WriteLine("Blue Large Products (better): ");
         foreach (var product in bf.Filter(products, multiSpec))
